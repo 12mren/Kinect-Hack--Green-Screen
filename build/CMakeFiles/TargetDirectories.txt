@@ -1,8 +1,0 @@
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/change_detection.dir
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/cool_hack3.dir
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/cyl_seg.dir
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/kinect_benchmark.dir
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/kinect_viz.dir
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/pcd_normals.dir
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/read_pcd.dir
-/panfs/panasas1/users/meganrenshaw19_gmail.com/code/kinect_grabber/build/CMakeFiles/test.dir
