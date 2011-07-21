@@ -7,9 +7,9 @@ Date: 07/21/11
 
 FILES:
   	CMakeLists.txt- Cmake file with build commands
- 	cool_hack3.cpp- Full version of green screen hack
-  	cyl_seg_kinect.cpp- Segments a PCD image
-  	kinect_viz.cpp- Visualizes a point cloud
+  	cool_hack.cpp- Full version of green screen hack
+  	cyl_seg.cpp- Segments a PCD image (demo from pointclouds.org)
+  	kinect_viz.cpp- Visualizes a point cloud (demo from pointclouds.org)
 
 DEPENCENCIES:
 	OpenCV
@@ -33,4 +33,4 @@ This project views in an image from the Kinect and displays a segmented person i
 of an image background.The two smaller projects used to build this project are included: 
 the visualization function and the segmentation function.
 
-
+To run the cyl_seg.cpp first download table_scene_lms400.pcd from http://www.pointclouds.org/documentation/tutorials/cylinder_segmentation.php#cylinder-segmentation and create a data file to stor the image in.
