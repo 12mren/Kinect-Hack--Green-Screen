@@ -33,14 +33,14 @@ main (int argc, char** argv)
   // Read in the cloud data
   reader.read ("../data/table_scene_lms400.pcd", *cloud);
   std::cerr << "PointCloud has: " << cloud->points.size () << " data points." << std::endl;
-#if 1
+
   // Build a passthrough filter to remove spurious NaNs
   pass.setInputCloud (cloud);
   pass.setFilterFieldName ("z");
   pass.setFilterLimits (-1.5,0);
   pass.filter (*cloud_filtered);
   std::cerr << "PointCloud after filtering has: " << cloud_filtered->points.size () << " data points." << std::endl;
-#endif
+
 
   // Estimate point normals
   ne.setSearchMethod (tree);

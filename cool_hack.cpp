@@ -30,12 +30,7 @@ using namespace cv;
 using namespace pcl;
 
 typedef pcl::PointXYZRGB PointT;
-/* EB::TimerList tm;
- tm["cylseg"] = new EB::Timer("cylseg function"); 
-  tm["cloudcb"] = new EB::Timer("cloudcb function");
- tm["run"]=new EB::Timer("run function");
-tm["initcv"]=new EB::Timer("initCV function"); 
-*/
+
    
 //Segments the person in Point cloud "cloud." Returns "cloud_cylinder."
 PointCloud<PointT>::ConstPtr cylSeg( const PointCloud<PointT>::ConstPtr& cl ) {
@@ -88,7 +83,7 @@ PointCloud<PointT>::ConstPtr cylSeg( const PointCloud<PointT>::ConstPtr& cl ) {
   extract.setNegative (false);
   PointCloud<PointT>::Ptr cloud_cylinder (new PointCloud<PointT> ());
   extract.filter (*cloud_cylinder);
-//tm["cylseg"]->stop();
+
   return cloud_cylinder;
 
 }
@@ -102,7 +97,7 @@ class SimpleOpenNIViewer
 
   //Call back function. Displays both image point cloud and kinect point cloud.
   void cloud_cb_ (const PointCloud<PointT>::ConstPtr &cloud ) {
-// tm["cloudcb"]->start();
+
     //Checks to see if this is the first instance of the call back function. If so it sets z values of image to that of the farthest depth fromt the Kinect.
      if (!firstcb){  
        double max =0;
@@ -124,14 +119,14 @@ class SimpleOpenNIViewer
       viewer.showCloud (cylSeg(cloud), "cloud");
       viewer.showCloud (cloud_filtered, "cloud_filtered");
    }
-// tm["cloudcb"]->stop();
+
 
  }
 
 
   //Loads the image, edits image cloud, and runs visualization.
   void run ( ) {
-// tm["run"]->start();
+
    //"firstcb" holds a boolean to determine if it is the first instance of the call back function.
     firstcb=false;
    
@@ -189,7 +184,7 @@ class SimpleOpenNIViewer
       sleep (1);
     }
     interface->stop ();
- //tm["run"]->stop();
+
 
   }
 
@@ -207,7 +202,7 @@ class SimpleOpenNIViewer
 
   //Loads image using OpenCV. Asks user for image path.
    void initCV() {
- //tm["initcv"]->start();
+
 
     string imgpath ="";
     cout<<"Please enter an image path."<<endl;
@@ -217,7 +212,7 @@ class SimpleOpenNIViewer
       printf("Could not load image file.");
       exit(0);
     } 
- //tm["initcv"]->stop();
+
 
   }
 
@@ -237,7 +232,7 @@ int  main (int argc, char** argv)
 
   SimpleOpenNIViewer v;
   v.run( );
-  //tm.writeToFile("alt_timer_log");
+
   return(0);
 }
                      

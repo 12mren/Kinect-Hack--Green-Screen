@@ -1,0 +1,35 @@
+Author: Megan Renshaw
+        http://www.marenshaw.wordpress.com
+
+Date: 07/21/11
+
+----------Kinect Green Screen----------
+
+FILES:
+  	CMakeLists.txt- Cmake file with build commands
+ 	cool_hack3.cpp- Full version of green screen hack
+  	cyl_seg_kinect.cpp- Segments a PCD image
+  	kinect_viz.cpp- Visualizes a point cloud
+
+DEPENCENCIES:
+	OpenCV
+	Point Cloud Library
+
+COMPILATION INSTRUCTIONS:
+	-If you don't have cmake you can get it with aptitude
+		sudo apt-get install cmake
+
+	-Make a build directory and from it run 
+    		cmake ..
+    		make
+
+	NOTE: If you have the dependencies installed (to your root directories, or
+	their paths in your ldpaths), then it should "just work" in UBUNTU 10.04. 
+	Please let me know otherwise
+
+----------Summary----------
+
+This project views in an image from the Kinect and displays a segmented person in front of an image background.
+The two smaller projects used to build this project are included: the visualization function and the segmentation function.
+
+
