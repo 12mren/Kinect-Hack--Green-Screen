@@ -29,7 +29,8 @@ COMPILATION INSTRUCTIONS:
 
 ----------Summary----------
 
-This project views in an image from the Kinect and displays a segmented person in front of an image background.
-The two smaller projects used to build this project are included: the visualization function and the segmentation function.
+This project views in an image from the Kinect and displays a segmented person in front 
+of an image background.The two smaller projects used to build this project are included: 
+the visualization function and the segmentation function.
 
 

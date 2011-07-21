@@ -8,6 +8,7 @@
 #include <pcl/sample_consensus/model_types.h>
 #include <pcl/segmentation/sac_segmentation.h>
 
+//Segments PCD images.
 typedef pcl::PointXYZ PointT;
 
 int

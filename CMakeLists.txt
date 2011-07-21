@@ -21,7 +21,6 @@ add_definitions(${PCL_DEFINITIONS})
 
 add_executable (kinect_viz kinect_viz.cpp )
 add_executable (cyl_seg cyl_seg.cpp)
-
 add_executable (cool_hack3 cool_hack3.cpp timer_eb.cpp)
 
 set( LIBRARIES ${PCL_LIBRARIES} 
