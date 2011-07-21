@@ -21,7 +21,7 @@ add_definitions(${PCL_DEFINITIONS})
 
 add_executable (kinect_viz kinect_viz.cpp )
 add_executable (cyl_seg cyl_seg.cpp)
-add_executable (cool_hack3 cool_hack3.cpp timer_eb.cpp)
+add_executable (cool_hack cool_hack.cpp timer_eb.cpp)
 
 set( LIBRARIES ${PCL_LIBRARIES} 
                ${OPENGL_LIBRARIES} 
@@ -31,6 +31,6 @@ set( LIBRARIES ${PCL_LIBRARIES}
 
 target_link_libraries (kinect_viz ${LIBRARIES} )
 target_link_libraries (cyl_seg ${LIBRARIES})
-target_link_libraries (cool_hack3 ${LIBRARIES})
+target_link_libraries (cool_hack ${LIBRARIES})
 
 
