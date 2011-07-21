@@ -33,4 +33,4 @@ This project views in an image from the Kinect and displays a segmented person i
 of an image background.The two smaller projects used to build this project are included: 
 the visualization function and the segmentation function.
 
-To run the cyl_seg.cpp first download table_scene_lms400.pcd from http://www.pointclouds.org/documentation/tutorials/cylinder_segmentation.php#cylinder-segmentation and create a data file to stor the image in.
+To run the cyl_seg.cpp first download table_scene_lms400.pcd from http://www.pointclouds.org/documentation/tutorials/cylinder_segmentation.php#cylinder-segmentation and create a data file to store the image in.
