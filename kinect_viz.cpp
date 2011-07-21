@@ -15,6 +15,7 @@
 #include <pcl/sample_consensus/model_types.h>
 #include <pcl/segmentation/sac_segmentation.h>
 
+//Program visualizes data from the Kinect.
 class SimpleOpenNIViewer
 {
   public:
